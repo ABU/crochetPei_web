@@ -1,0 +1,19 @@
+import { Product } from '../data/products';
+
+interface ProductCardProps {
+  product: Product;
+}
+
+const ProductCard = ({ product }: ProductCardProps) => {
+  return (
+    <div className="product-card">
+      <img src={product.images[0]} alt={product.name} className="product-image" />
+      <div className="product-info">
+        <h3>{product.name}</h3>
+        <p>${product.price}</p>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;

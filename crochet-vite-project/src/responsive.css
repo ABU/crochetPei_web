@@ -1,0 +1,295 @@
+/* 響應式設計樣式文件 */
+
+/* 平板尺寸 (768px 以下) */
+@media (max-width: 768px) {
+  /* 導覽列 */
+  .navigation .nav-menu {
+    display: none !important;
+  }
+  
+  .navigation .nav-toggle {
+    display: flex !important;
+  }
+  
+  .navigation .nav-menu-mobile.active {
+    display: block !important;
+  }
+  
+  .navigation .nav-container {
+    height: 55px !important;
+  }
+  
+  /* 主要內容區域 */
+  main {
+    padding-top: 75px !important;
+  }
+  
+  /* 標題樣式 */
+  main h1 {
+    font-size: 1.8rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* 關於我區塊 */
+  .about-content {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  
+  .placeholder-image {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  
+  /* 產品列表 */
+  main .product-list {
+    padding: 30px 15px !important;
+  }
+  
+  main .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+    gap: 15px !important;
+  }
+  
+  /* 產品卡片 */
+  main .product-card {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* 產品圖片 */
+  main .product-image {
+    aspect-ratio: 1 / 1 !important;
+  }
+  
+  /* 產品資訊 */
+  main .product-info {
+    padding: 12px !important;
+  }
+  
+  main .product-info h3 {
+    font-size: 1rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  main .product-info p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* 聯絡方式 */
+  .social-links {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+  }
+}
+
+/* 手機尺寸 (480px 以下) */
+@media (max-width: 480px) {
+  /* 導覽列 */
+  .navigation .nav-container {
+    padding: 0 15px !important;
+    height: 50px !important;
+  }
+  
+  .navigation .nav-brand h2 {
+    font-size: 1.3rem !important;
+  }
+  
+  /* 主要內容區域 */
+  main {
+    padding-top: 70px !important;
+  }
+  
+  /* 標題樣式 */
+  main h1 {
+    font-size: 1.5rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* 關於我區塊 */
+  .about-me {
+    padding: 40px 15px !important;
+  }
+  
+  .about-me h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .about-text p {
+    font-size: 1rem !important;
+  }
+  
+  .placeholder-image {
+    width: 200px !important;
+    height: 200px !important;
+    font-size: 1rem !important;
+  }
+  
+  /* 產品列表 */
+  main .product-list {
+    padding: 30px 15px !important;
+  }
+  
+  main .product-list h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  main .products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    max-width: 100% !important;
+  }
+  
+  /* 產品卡片 */
+  main .product-card {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* 產品圖片 */
+  main .product-image {
+    aspect-ratio: 1 / 1 !important;
+  }
+  
+  /* 產品資訊 */
+  main .product-info {
+    padding: 12px !important;
+  }
+  
+  main .product-info h3 {
+    font-size: 0.9rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  main .product-info p {
+    font-size: 0.8rem !important;
+  }
+  
+  /* 聯絡方式 */
+  .contact {
+    padding: 40px 15px !important;
+  }
+  
+  .contact h2 {
+    font-size: 1.8rem !important;
+  }
+  
+  .social-links {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+  
+  .social-link {
+    padding: 15px !important;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem !important;
+  }
+  
+  .contact-info {
+    padding: 20px !important;
+  }
+  
+  .contact-info p {
+    font-size: 1rem !important;
+  }
+}
+
+/* 超小螢幕 (320px 以下) */
+@media (max-width: 320px) {
+  /* 導覽列 */
+  .navigation .nav-container {
+    padding: 0 10px !important;
+    height: 45px !important;
+  }
+  
+  .navigation .nav-brand h2 {
+    font-size: 1.2rem !important;
+  }
+  
+  /* 主要內容區域 */
+  main {
+    padding-top: 65px !important;
+  }
+  
+  /* 標題樣式 */
+  main h1 {
+    font-size: 1.3rem !important;
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  /* 關於我區塊 */
+  .about-me {
+    padding: 30px 10px !important;
+  }
+  
+  .about-me h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .placeholder-image {
+    width: 180px !important;
+    height: 180px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* 產品列表 */
+  main .product-list {
+    padding: 20px 10px !important;
+  }
+  
+  main .product-list h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  /* 產品卡片 */
+  main .product-card {
+    max-width: 250px !important;
+  }
+  
+  /* 產品資訊 */
+  main .product-info {
+    padding: 10px !important;
+  }
+  
+  main .product-info h3 {
+    font-size: 0.85rem !important;
+  }
+  
+  main .product-info p {
+    font-size: 0.75rem !important;
+  }
+  
+  /* 聯絡方式 */
+  .contact {
+    padding: 30px 10px !important;
+  }
+  
+  .contact h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .social-link {
+    padding: 12px !important;
+  }
+  
+  .social-icon {
+    font-size: 1.3rem !important;
+    margin-right: 10px !important;
+  }
+  
+  .social-link span {
+    font-size: 1rem !important;
+  }
+  
+  .contact-info {
+    padding: 15px !important;
+  }
+  
+  .contact-info p {
+    font-size: 0.9rem !important;
+  }
+}
